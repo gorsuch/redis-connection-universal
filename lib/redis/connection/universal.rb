@@ -3,9 +3,9 @@ require 'openssl'
 
 class Redis
   module Connection
-    class Universal < Ruby
+    class Universal
       def connect(uri, timeout)
-        super if uri.scheme == 'redis'
+        Ruby.new.connect(uri, timeout) if uri.scheme == 'redis'
         return connect_ssl(uri, timeout) if uri.scheme == 'redis+ssl'
       end
 

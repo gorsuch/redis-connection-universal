@@ -14,4 +14,5 @@ Gem::Specification.new do |gem|
   gem.name          = "redis-connection-universal"
   gem.require_paths = ["lib"]
   gem.version       = Redis::Connection::Universal::VERSION
+  gem.add_dependency("redis")
 end
