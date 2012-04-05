@@ -4,8 +4,8 @@ require File.expand_path('../lib/redis/connection/universal/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Michael Gorsuch"]
   gem.email         = ["michael.gorsuch@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{universal redis driver to connect that allows for multiple transports}
+  gem.summary       = gem.description
   gem.homepage      = ""
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
