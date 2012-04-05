@@ -1,6 +1,4 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/redis/connection/universal/version', __FILE__)
-
 Gem::Specification.new do |gem|
   gem.authors       = ["Michael Gorsuch"]
   gem.email         = ["michael.gorsuch@gmail.com"]
@@ -13,6 +11,6 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = "redis-connection-universal"
   gem.require_paths = ["lib"]
-  gem.version       = Redis::Connection::Universal::VERSION
+  gem.version       = '0.0.1'
   gem.add_dependency("redis")
 end
