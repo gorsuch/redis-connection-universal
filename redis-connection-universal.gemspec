@@ -4,7 +4,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["michael.gorsuch@gmail.com"]
   gem.description   = %q{universal redis driver to connect that allows for multiple transports}
   gem.summary       = gem.description
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/gorsuch/redis-connection-universal"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
