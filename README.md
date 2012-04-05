@@ -18,16 +18,12 @@ which currently has a pull request open against the upstream tree
 
 Add these lines to your application's Gemfile:
 
-    gem 'gorsuch-redis'
+    gem "redis", :git => "git://github.com/gorsuch/redis-rb", :ref => "9c8ee97d8b6e8f1c7fc42df63d93e4476e34a462"
     gem 'redis-connection-universal'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-    $ gem install gorsuch-redis
-    $ gem install redis-connection-universal
 
 ## Usage
 
@@ -38,7 +34,7 @@ require 'redis'
 require 'redis-connection-universal'
 
 r = Redis.new url: "redis+ssl://myhost:6380"
-r.keys
+r.info
 ```
 
 ## Contributing
